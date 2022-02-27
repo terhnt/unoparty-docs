@@ -88,7 +88,7 @@ Because Unowallet does not store your credentials, it has no access to your info
 Because of the US government regulations, betting functionality is limited to non-US-based client IP addresses by default. This is not a limitation of the protocol itself. Please ensure that the use-case you are aiming for is legal within your jurisdiction, and seek professional legal advice when starting a project.
 
 ## Can I run my own Unowallet server?
-Yes, although that requires a full bitcoin node and some technical knowledge. Please refer to [this page](/`advanced/federated-node/getting-started) for details on how to setup a Unoparty Federated Node. If you are starting from scratch, it may take several days to download and index the bitcoin blockchain.
+Yes, although that requires a full bitcoin node and some technical knowledge. Please refer to [this page](https:/TODO.com/advanced/federated-node/getting-started) for details on how to setup a Unoparty Federated Node. If you are starting from scratch, it may take several days to download and index the bitcoin blockchain.
 
 ## I want to translate Unowallet to my language
 Translations are hosted at [Transifex](https://www.transifex.com/organization/counterparty/dashboard/counterwallet). Open an account (or login with Github) and contribute as a translator or reviewer. We appreciate any contributions.

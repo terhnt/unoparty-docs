@@ -9,7 +9,7 @@ const config = {
   title: 'Unoparty',
   tagline: 'Unobtanium Protocol Docs',
   url: 'http://docs.unoparty.io',
-  baseUrl: '/',
+  baseUrl: '/unoparty-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -77,7 +77,7 @@ const config = {
               },
               {
                 label: 'Advanced',
-                to: 'docs/wallet/test'
+                to: 'docs/advanced/main'
               },
             ],
           },
