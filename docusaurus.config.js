@@ -56,7 +56,7 @@ const config = {
             label: 'Basics',
           },
           {to: '/docs/wallets/unowalletfaq', label: 'Wallets', position: 'left'},
-          {to: '/docs/advanced/main', label: 'Advanced', position: 'left'},
+          {to: '/docs/advanced/architecture', label: 'Advanced', position: 'left'},
           {to: '/docs/develop/main', label: 'Develop', position: 'left'},
           {
             href: 'https://github.com/terhnt/unoparty-docs',
