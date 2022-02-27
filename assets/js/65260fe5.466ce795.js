@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkunoparty_docs=self.webpackChunkunoparty_docs||[]).push([[243],{834:function(s){s.exports=JSON.parse('{"allTagsPath":"/unoparty-docs/blog/tags","slug":"/unoparty-docs/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/unoparty-docs/blog/tags/docusaurus"}')}}]);
