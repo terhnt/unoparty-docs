@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkunoparty_docs=self.webpackChunkunoparty_docs||[]).push([[385],{581:function(o){o.exports=JSON.parse('{"allTagsPath":"/unoparty-docs/blog/tags","slug":"/unoparty-docs/blog/tags/facebook","name":"facebook","count":1,"permalink":"/unoparty-docs/blog/tags/facebook"}')}}]);
