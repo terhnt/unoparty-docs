@@ -67,7 +67,7 @@ const config = {
             items: [
               {
                 label: 'Basics',
-                to: '/docs/intro',
+                to: '/docs/what-is-unoparty/A-Unobtanium-Protocol',
               },
               {
                 label: 'Advanced',
