@@ -23,7 +23,7 @@ The requests to the secondary REST API are made via HTTP GET to ```/rest/```, wi
 **JSON-RPC**  
 All requests must have POST data that is JSON encoded. Here's an example of the POST data for a valid API request:
 
-```
+```json
 {
   "method": "get_sends",
   "params": {"order_by": "tx_hash",
@@ -56,7 +56,7 @@ The following examples have authentication enabled and the ```user``` set to its
 Submissions of examples in additional languages are welcome!
 
 ### Python
-```
+```python
 import json
 import requests
 from requests.auth import HTTPBasicAuth
@@ -78,7 +78,7 @@ print("Response: ", response.text)
 ### PHP
 With PHP, you use the [JsonRPC](https://github.com/fguillot/JsonRPC) library.
 
-```
+```php
 <?php
 require 'JsonRPC/src/JsonRPC/Client.php';
 use JsonRPC\Client;
@@ -99,21 +99,21 @@ var_dump($result2);
 Remember to surround non-numeric parameter values with the double quotes, as per [JSON-RPC 2.0 examples](http://www.jsonrpc.org/specification#examples). For example, ```"order_by": "tx_hash"``` is correct and will work, ```"order_by": 'tx_hash'``` won't.
 
 ### Linux  
-```
+```bash
 curl -X POST http://127.0.0.1:4120/api/ --user unobtaniumrpc:$PASSWORD -H 'Content-Type: application/json; charset=UTF-8' -H 'Accept: application/json, text/javascript' --data-binary '{ "jsonrpc": "2.0", "id": 0, "method": "get_running_info" }'
 ```
 
 ### Windows  
 On Windows, depending on implementation the above curl command may need to be formatted differently due to problems that Windows has with escapes. For example this particular format was found to work with curl 7.50.1 (x86_64-w64-mingw32) on Windows 10 (x64).
 
-```
+```bash
 curl -X POST http://127.0.0.1:4120/api/ --user rpc:$PASSWORD -H "Content-Type: application/json; charset=UTF-8" -H "Accept: application/json, text/javascript" --data-binary "{ \"jsonrpc\": \"2.0\", \"id\": 0, \"method\": \"get_running_info\" }"
 ```
 
 ### c# (RestSharp)  
 Authorization string in the example below is based on the default username/password.
 
-```
+```csharp
 var client = new RestClient("http://127.0.0.1:4120/api/");
 var request = new RestRequest(Method.POST);
 request.AddHeader("cache-control", "no-cache");
@@ -125,7 +125,7 @@ IRestResponse response = client.Execute(request);
 
 ### Go  
 Authorization string in the example below is based on the default username/password.
-```
+```go
 package main
 
 import (
@@ -161,7 +161,7 @@ func main() {
 ### Ruby (Net::HTTP)  
 Authorization string in the example below is based on the default username/password.
 
-```
+```ruby
 require 'uri'
 require 'net/http'
 
@@ -183,7 +183,7 @@ puts response.read_body
 The following examples don't use authentication as with default settings.
 
 ### Python  
-```
+```python
 import requests
 
 url = "http://localhost:4120/rest/"
@@ -198,21 +198,21 @@ print("Response: ", response.text)
 These examples use the default username/password combination in URL.
 
 **Linux**  
-```
+```bash
 curl "http://unobtaniumrpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7ihQyoSC8y2MW&destination=uNopartyXburnXXXXXXXXXXXXXXXWJmsqn&op=AND" -H "Content-Type: application/json; charset=UTF-8" -H "Accept: application/json"
 ```
 
 **Windows**
 This example was created with curl 7.50.1 (x86_64-w64-mingw32) on Windows 10. For POST encryption add '-X POST'.
 
-```
-curl "http://rpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7ihQyoSC8y2MW&destination=uNopartyXburnXXXXXXXXXXXXXXXWJmsqn&op=AND" -H "Content-Type: application/json; charset=UTF-8" -H "Accept: application/json"
+```bash
+curl "http://unobtaniumrpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7ihQyoSC8y2MW&destination=uNopartyXburnXXXXXXXXXXXXXXXWJmsqn&op=AND" -H "Content-Type: application/json; charset=UTF-8" -H "Accept: application/json"
 ```
 
 ## Example Parameters
 - Fetch all balances for all assets for both of two addresses, using keyword-based arguments
 
-```
+```json
   payload = {
              "method": "get_balances",
              "params": {
@@ -225,7 +225,7 @@ curl "http://rpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7
             }
 ```
 - Get all burns between blocks 280537 and 280539 where greater than .2 UNO was burned, sorting by tx_hash (ascending order)
-```
+```json
   payload = {
              "method": "get_burns",
              "params": {
@@ -241,7 +241,7 @@ curl "http://rpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7
             }
 ```
 - Fetch all debits for > 2 XUP between blocks 280537 and 280539, sorting the results by quantity (descending order)
-```
+```json
   payload = {
              "method": "get_debits",
              "params": {
@@ -256,7 +256,7 @@ curl "http://rpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7
             }
 ```
 - Send 1 XUP (specified in satoshis) from one address to another.
-```
+```json
   payload = {
              "method": "create_send",
              "params": {
@@ -270,7 +270,7 @@ curl "http://rpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7
             }
 ```
 - Issuance (indivisible)
-```
+```json
   payload = {
              "method": "create_issuance",
              "params": {
@@ -285,7 +285,7 @@ curl "http://rpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7
             }
 ```
 - Transfer asset ownership
-```
+```json
   payload = {
              "method": "create_issuance",
              "params": {
@@ -299,7 +299,7 @@ curl "http://rpc:rpc@127.0.0.1:4120/rest/sends/get?source=uVVuwXm2mDK9pr9XkWT5k7
             }
 ```
 - Lock asset
-```
+```json
   payload = {
              "method": "create_issuance",
              "params": {
@@ -321,7 +321,7 @@ The process of signing and broadcasting a transaction, from start to finish, dep
 
 **Unobtanium Core with Python**
 
-```
+```python
 #! /usr/bin/env python3
 
 from unopartylib.lib import util
@@ -351,7 +351,7 @@ def do_send(source, destination, asset, quantity, fee, encoding):
 
 **Unobtanium Core with Javascript** (Utilizing the Unowallet [Bitcore wrapper code](https://raw.githubusercontent.com/terhnt/unowallet/master/src/js/util.bitcore.js) for brevity.)
 
-```
+```html
 <html>
     <script src="https://raw.githubusercontent.com/bitpay/bitcore-lib/f031e1ddfbf0064ef503a28aada86c4fbf9a414c/bitcore-lib.min.js"></script>
     <script src="https://raw.githubusercontent.com/terhnt/unowallet/master/src/js/util.bitcore.js"></script>
@@ -388,7 +388,7 @@ def do_send(source, destination, asset, quantity, fee, encoding):
 
 **Unobtaniumjs-lib on javascript, signing a P2SH redeeming transaction**
 
-```
+```js
 // Assumes NodeJS runtime. Several libraries exist to replace the Buffer class on web browsers
 const unobtanium = require('unobtaniumjs-lib')
 
