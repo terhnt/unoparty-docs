@@ -17,7 +17,7 @@ Built-in Modules[​](#built-in-modules)
 *   `betting`: Implements betting-specific API calls, tasks, and more.
 *   `dex`: Implements API methods, order book and market info parsing, and more for Unoparty's distributed exchange. (Requires that the `assets` module be loaded for use.)
 *   `transaction_stats`: Handles the compliation of transaction statistics.
-*   `counterwallet`: Implements Counterwallet-specific API calls, tasks, and more. (Requires that the `assets` module be loaded for use.)
+*   `unowallet`: Implements Unowallet-specific API calls, tasks, and more. (Requires that the `assets` module be loaded for use.)
 
 Any of these above modules may be enabled or disabled, allowing you to tune `unoblock` to your exact needs out of the box.
 
@@ -49,11 +49,11 @@ Some other notes on processors:
 
 ### MessageProcessor[​](#messageprocessor)
 
-`MessageProcessor` runs once for each message as obtained from the `unopartyd` message feed, for all activity that has been confirmed on the blockchain (i.e. at least 1 Bitcoin confirmation). `msg` will pass the message in the same format as the `get_messages` unopartyd api method, msg\_data corresponds to `json.loads(msg['bindings'])`.
+`MessageProcessor` runs once for each message as obtained from the `unopartyd` message feed, for all activity that has been confirmed on the blockchain (i.e. at least 1 Unobtanium confirmation). `msg` will pass the message in the same format as the `get_messages` unopartyd api method, msg\_data corresponds to `json.loads(msg['bindings'])`.
 
 ```python
 @MessageProcessor.subscribe(enabled=True, priority=90)
-def custom_received_xcp_alert(msg, msg_data):
+def custom_received_xup_alert(msg, msg_data):
     if msg['category'] != 'sends': return
     if message['status'] != 'valid': return
     if not msg_data['destination'] in MY_ADDRESS_LIST: return
@@ -188,7 +188,7 @@ start_task(run_my_task)
 Module configuration file[​](#module-configuration-file)
 ---------------------------------------------------------------------------------
 
-After creating your module, you will need to tell `unoblock` about it, so that it can load it on startup. To do this, you should edit (or create) a file called `modules.conf` (or `modules.testnet.conf` for testnet), which should be located in the unoblock `config-dir` (`~xcp/.config/unoblock` on a federated node).
+After creating your module, you will need to tell `unoblock` about it, so that it can load it on startup. To do this, you should edit (or create) a file called `modules.conf` (or `modules.testnet.conf` for testnet), which should be located in the unoblock `config-dir` (`~xup/.config/unoblock` on a federated node).
 
 To load your custom module, specify the module's path under `[LoadModule]` relative to the `unoblock base-dir`. i.e.:
 
