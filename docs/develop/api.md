@@ -23,7 +23,7 @@ For example: ```get_balances```, ```get_credits```, ```get_debits``` are all val
 - **limit** (_integer_): (maximum) number of elements to return. Can specify a value less than or equal to the instance's max limit (default 1000). For more results, use a combination of ```limit``` and ```offset``` parameters to paginate results. If the instance has a limit of 0 you can specify any limit for the row results, even 0 to get the full dataset.
 - **offset** (_integer_): return results starting from specified ```offset```
 
-**Special **Parameters:**  **  
+**Special Parameters:**
 - **show\_expired** (_boolean_): used only for ```get_orders```. When false, ```get_orders``` doesn't return orders which expire next block.
 - **memo\_hex** (_string_): used only for ```get_sends```. When specified, filter the table for a hexadecimal value instead of searching by a text string.
 
@@ -41,10 +41,10 @@ A list of objects with attributes corresponding to the queried table fields.
 - To get all UNO pays (for DEx order matches) between the source uVVuwXm2mDK9pr9XkWT5k7ihQyoSC8y2MW and destination (UNO buyer) uLoY132tBNEKDD3CRkrAen8Jnckjy1gXZR, use ```get_btcpays``` method with these **Parameters:**   ```{ "filters": [{"field": "source", "op": "==", "value": "uVVuwXm2mDK9pr9XkWT5k7ihQyoSC8y2MW"}, {"field": "destination", "op": "==", "value": "uLoY132tBNEKDD3CRkrAen8Jnckjy1gXZR"}],"filterop": "and"}```
 
 **Notes:**  
-- Please note that the ```get_balances``` API call will not return balances for UNO itself. It only returns balances for XUP and other Unoparty assets. To get UNO-based balances, use an existing system such as Unobtanium Core, blockchain.info, etc.
+- Please note that the ```get\_balances``` API call will not return balances for UNO itself. It only returns balances for XUP and other Unoparty assets. To get UNO-based balances, use an existing system such as Unobtanium Core, blockchain.info, etc.
 
 ### get_asset_info  
-**get_asset_info(asset)**
+**get\_asset\_info(asset)**
 
 Gets information on an issued asset. **NOTE:** This method is depreaciated and may be removed in a future release.
 
