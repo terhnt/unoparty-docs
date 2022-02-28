@@ -3,7 +3,6 @@ sidebar_position: 1
 ---
 # Overview
 
-# Overview
 ```unoparty-lib``` provides a JSON RPC 2.0-based API based off of that of Unobtanium Core. It is the primary means by which other applications should interact with the Unoparty network.
 
 The API server is started either through the [```CLI interface```](/docs/advanced/cli) or with the [```unoparty-lib```](/docs/advanced/architecture) Python library. It listens on port **4120** by ```default``` (**14120** for ```testnet```) and requires HTTP Basic Authentication to connect.
@@ -63,7 +62,7 @@ from requests.auth import HTTPBasicAuth
 
 url = "http://localhost:4120/api/"
 headers = {'content-type': 'application/json'}
-auth = HTTPBasicAuth('rpc', PASSWORD)
+auth = HTTPBasicAuth('unobtaniumrpc', PASSWORD)
 
 payload = {
   "method": "get_running_info",
@@ -83,7 +82,7 @@ With PHP, you use the [JsonRPC](https://github.com/fguillot/JsonRPC) library.
 require 'JsonRPC/src/JsonRPC/Client.php';
 use JsonRPC\Client;
 $client = new Client('http://localhost:4120/api/');
-$client->authentication('rpc', PASSWORD);
+$client->authentication('unobtaniumrpc', PASSWORD);
 
 $result = $client->execute('get_balances', array('filters' => array('field' => 'address', 'op' => '==', 'value' => '1NFeBp9s5aQ1iZ26uWyiK2AYUXHxs7bFmB')));
 print("get_balances result:\n");

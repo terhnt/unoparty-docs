@@ -1,13 +1,13 @@
 ---
 sidebar_position: 4
 ---
-# How to send Counterparty assets in bulk
+# How to send Unoparty assets in bulk
 
 Below is a script for constructing, signing and broadcasting a large number of sends efficiently. It assumes that the source addresses are in a (temporarily) unlocked Unobtanium Core wallet, to which a running instance of unopartyd is connected.
 
 This script takes a single command-line argument of the CSV file from which to pull the sources, destinations, quantities, assets and fees.
 
-Warning: This example is outdated as it used the previous addrindex_uno unobtanium branch, however, same principles apply to current mainline repo.
+Warning: This example is outdated as it used the previous addrindexrs_uno unobtanium branch, however, same principles apply to current mainline repo.
 
 ## Script
 
