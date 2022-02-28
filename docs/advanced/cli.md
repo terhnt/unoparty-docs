@@ -27,8 +27,8 @@ _Create and broadcast a ```send``` message_
 - --asset = the ASSET of which you would like to send QUANTITY
 - --fee = the exact UNO fee to be paid to miners
 ```
-- send --source=Ub2xXLYiUphddYYuEKSfr4hHGjNYhjG5Nf --quantity=3 \
-- --asset=BBBC --destination=n3BrDB6zDiEPWEE6wLxywFb4Yp9ZY5fHM7
+send --source=Ub2xXLYiUphddYYuEKSfr4hHGjNYhjG5Nf --quantity=3 \
+--asset=BBBC --destination=n3BrDB6zDiEPWEE6wLxywFb4Yp9ZY5fHM7
 ```
 
 ## Dispenser
