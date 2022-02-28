@@ -4,7 +4,7 @@ id: unowallet-notes
 ---
 # Unowallet notes
 More on multiple Unowallet servers
-For the time being, the Unoparty team itself operates the primary Unowallet platform at unowallet.io. However, as Unowallet is open source software, it is possible to host your own site with Unowallet site (for your personal use, or as an offering to others), or to even host your own Unowallet servers to use with your own Unoparty wallet implementation. The Unoparty team supports and encourages this kind of activity (as long as the servers are secure), as it aids with increasing decentralization.
+For the time being, the Unoparty team itself operates the primary Unowallet platform at unoparty.io (and click here for [testnet](https://unoparty.io?testnet=1)). However, as Unowallet is open source software, it is possible to host your own site with Unowallet site (for your personal use, or as an offering to others), or to even host your own Unowallet servers to use with your own Unoparty wallet implementation. The Unoparty team supports and encourages this kind of activity (as long as the servers are secure), as it aids with increasing decentralization.
 
 Also note that due to the nature of Unowallet being a deterministic wallet, users using one Unowallet platform (i.e. the official one, for instance) have the flexibility to start using a different Unowallet platform instead at any time, and as funds (i.e. private keys) are not stored on the server in any fashion, they will be able to see their funds on either. (Note that the only thing that will not migrate are saved preferences, such as address aliases, the theme setting, etc.)
 
