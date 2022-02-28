@@ -45,7 +45,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'what-is-unoparty/A-Unobtanium-Protocol',
             position: 'left',
             label: 'Basics',
           },
