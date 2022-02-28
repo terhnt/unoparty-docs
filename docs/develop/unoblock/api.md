@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Unoblock API
 
-For an overview of `unoblock`, see [here](/docs/platform_architecture/).
+For an overview of `unoblock`, see [here](/docs/advanced/architecture/).
 
 `unoblock` release information is available from [this link](https://github.com/terhnt/unoblock/releases).
 
@@ -215,7 +215,7 @@ Given two arbitrary assets, returns the base asset and the quote asset.
 
 **get\_asset\_extended\_info(asset)**
 
-Returns extended asset data (i.e. that published via an external .json file, as documented [here](/docs/enhanced_asset_info/)), if available, for a specific asset.
+Returns extended asset data (i.e. that published via an external .json file, as documented [here](/docs/assets/enhanced-asset/)), if available, for a specific asset.
 
 *   **param asset:** The name of the asset (e.g. "XUP")
 *   **return:** Information on the asset or False if no extended info exists. Contains the data as documented in the extended asset info JSON format, among other fields.
