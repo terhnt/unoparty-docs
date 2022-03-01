@@ -9,7 +9,7 @@ XUP is the native token of Unoparty. It is a technical necessity for adding adva
 Note: It is a common misconception that XUP is a competitor to Unobtanium, when in fact it cannot exist without it. And even though XUP is not a traditional currency, it serves a steady and critical purpose within the Unoparty ecosystem.
 
 ### How was XUP launched?
-The supply of XUP was created in a process called 'proof-of-burn' that lasted from January 2nd to February 3rd 2014 (5000 Unobtanium blocks). During this period, anyone was able to exchange Unobtaniums for XUP automatically on a protocol level under the following conditions:
+The supply of XUP will be created in a process called 'proof-of-burn' that start sometime during 2022. During this period, anyone will be able to exchange Unobtaniums for XUP automatically on a protocol level under the following conditions:
 
 Users sent their UNO to a verifiably unspendable Unobtanium address with no known private key. ([uNopartyXburnXXXXXXXXXXXXXXXWJmsqn](https://unoparty.xchain.io/burns))
 
