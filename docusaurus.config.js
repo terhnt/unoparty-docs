@@ -52,6 +52,7 @@ const config = {
           {to: '/docs/wallets/unowalletfaq', label: 'Wallets', position: 'left'},
           {to: '/docs/advanced/architecture', label: 'Advanced', position: 'left'},
           {to: '/docs/develop/api/overview', label: 'Develop', position: 'left'},
+          {to: '/docs/testnet', label: 'Testnet', position: 'left'},
           {
             href: 'https://github.com/terhnt/unoparty-docs',
             label: 'GitHub',
@@ -72,6 +73,14 @@ const config = {
               {
                 label: 'Advanced',
                 to: 'docs/advanced/architecture'
+              },
+              {
+                label: 'Wallets',
+                to: 'docs/wallets/unowalletfaq'
+              },
+              {
+                label: 'Testnet',
+                to: 'docs/testnet'
               },
             ],
           },
