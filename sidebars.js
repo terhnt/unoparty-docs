@@ -35,6 +35,8 @@ const sidebars = {
     ],
     "Unowallet Tutorial": [
       "wallets/tuts/getting-started",
+      "wallets/tuts/create-token",
+      "wallets/tuts/change-token-settings",
     ]
   },
   "advanced": {
