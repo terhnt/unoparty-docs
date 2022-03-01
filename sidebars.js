@@ -47,7 +47,14 @@ const sidebars = {
     ],
     "Advanced Usage": [
       "advanced/sending-bulk",
-    ]
+    ],
+    "Federated Node(unonode)": [
+      "advanced/unonode/getting-started",
+      "advanced/unonode/pre-installation",
+      "advanced/unonode/installation",
+      "advanced/unonode/administration",
+      "advanced/unonode/unowallet",
+    ],
   },
   "Develop": {
     "Unoparty API" : [
