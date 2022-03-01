@@ -5,7 +5,7 @@ id: create-token
 
 # Create a Token/NFTs
 
-Unowallet makes it possible for anyone to create tokens (also known as assets, coins, derivatives) that are then owned by the address they were issued from. Ownership enables you to issue more units of your token, lock the supply, change the description, and customize other settings. To learn more about token settings, click [here](/docs/wallets/unowallet-tutorials/change-token-settings).
+Unowallet makes it possible for anyone to create tokens (also known as assets, coins, derivatives) that are then owned by the address they were issued from. Ownership enables you to issue more units of your token, lock the supply, change the description, and customize other settings. To learn more about token settings, click [here](/docs/wallets/tuts/change-token-settings).
 
 Once the issuance is confirmed by the Bitcoin network, your tokens can be freely traded on the Unowallet decentralized exchange against XUP and other tokens and (if you can convince them) centralized exchanges as well.
 

@@ -29,7 +29,7 @@ If you would like to create a verifiably finite token, you will have to lock you
 
 ### Change description[​](#change-description)
 
-You can change the description of your token as often as you like. This will be publicly viewble in the blockchain. If you would like to add images, and additional information in your description, click [here](/docs/basics/assets/enhanced-asset)
+You can change the description of your token as often as you like. This will be publicly viewble in the blockchain. If you would like to add images, and additional information in your description, click [here](/docs/assets/enhanced-asset)
 
 ![](/img/tutorial/creating-assets/changetoken4.png)
 
