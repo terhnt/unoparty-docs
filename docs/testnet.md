@@ -45,7 +45,7 @@ Creating a wallet is the same on both mainnet and testnet, you can get an indept
 - The [unobtanium telegram channel](https://t.me/unobtaniumuno) has a bot that will give you testnet uno.
   - 1. Join the channel
   - 2. type ```/gettestnet <TESTNET ADDDRESS HERE>```
-  - 3. Sometime's the bot's not 'active' to use it when its not active type ```/testunotipbot@gettestnet <TESTNET ADDDRESS HERE>```
+  - 3. Sometime's the bot's not 'active' to use it when its not active type ```/testytipbot@gettestnet <TESTNET ADDDRESS HERE>```
 - The [unobtanium telegram channel](https://t.me/unobtaniumuno) has many users that are happy to send you some, just ask and post your testnet wallet address.
 - Reply to the [unobtanium news twitter](https://twitter.com/unobtanium_uno)
 - You could run a unobtanium testnet node and mine some testnet uno yourself ( there is not many miners on testnet atm so should be relatively easy with any PC ).
@@ -61,6 +61,8 @@ An alternative way is send 1-5 Testnet UNO to ```UUnoPartyXburnTestnetXXXXXXXXFE
 To create a named asset you require ```0.5 XUP```, a subasset is ```0.25 XUP``` and a numeric asset is Free, Creating any asset will cost a small amount of uno as its a tx sent on the Unobtanium blockchain.
 
 [Click HERE](/docs/wallets/tuts/create-token) to see an in-depth tutorial for creating an asset on mainnet (its the same).
+
+To add an image or more info to your asset there is [information located HERE](/docs/assets/enhanced-asset).
 
 ## Using other features of unowallet
 

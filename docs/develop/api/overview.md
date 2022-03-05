@@ -327,10 +327,21 @@ from unopartylib.lib import util
 from unopartylib.lib import config
 from unopartylib.lib.backend import addrindexrs_uno
 
-config.TESTNET =
-config.RPC =
-config.BACKEND_URL =
-config.BACKEND_SSL_NO_VERIFY =
+# Change the below as needed
+# config.RPC = Unoparty RPC url
+# config.BACKEND_URL = Unobtanium RPC url
+# Unoparty Ports -
+# Mainnet: 4120
+# Testnet: 14120
+# Unobtanium Ports
+# Mainnet: 65535
+# Testnet: 65531
+
+config.TESTNET = True # False for mainnet
+config.RPC = "http://unobtaniumrpc:rpc@45.32.6.134:14120/api/"
+config.BACKEND_URL = 'http://<unobtaniumd-rpcuser>:<unobtaniumd-rpcpassword>@localhost:65531'
+config.BACKEND_SSL_NO_VERIFY = True
+config.REQUESTS_TIMEOUT = 20
 
 def unoparty_api(method, params):
     return util.api(method, params)
@@ -338,7 +349,7 @@ def unoparty_api(method, params):
 def unobtanium_api(method, params):
     return addrindexrs_uno.rpc(method, params)
 
-def do_send(source, destination, asset, quantity, fee, encoding):
+def do_send(source, destination, asset, quantity, fee, encoding=''):
     validateaddress = unobtanium_api('validateaddress', [source])
     assert validateaddress['ismine']
     pubkey = validateaddress['pubkey']
